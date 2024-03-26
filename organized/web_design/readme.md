@@ -1,7 +1,7 @@
 __本課程內容為web網頁設計__  
 _1. HW1_  
-[/t]主旨 : 利用wordpress架設個人blog  
-[\t]任務 :  
+> 主旨 : 利用wordpress架設個人blog  
+任務 :  
 install server  
 [Tab]apache & error page  
 [Tab][Tab][Tab]php  
@@ -16,6 +16,7 @@ install server
 [Tab]Bonus :   
 [Tab][Tab]register hostname(DNS)  
 [Tab][Tab]https protocol  
+  
 _2. 四系迎新報名網頁_  
 [Tab][Tab][Tab]主旨 : 利用bootstrap設計報名網頁  
 [Tab][Tab][Tab]任務 :   
