@@ -2,10 +2,10 @@ __本課程內容為web網頁設計__
 _1. HW1_  
 > 主旨 : 利用wordpress架設個人blog  
 任務 :  
-install server  
-[Tab]apache & error page  
-[Tab][Tab][Tab]php  
-[Tab][Tab][Tab]MySQL  
+: install server  
+~ apache & error page  
+~ php  
+~ MySQL  
 [Tab][Tab]install wordpress  
 [Tab][Tab][Tab]install wordpress  
 [Tab][Tab][Tab]chang wordpress template  
