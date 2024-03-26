@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>四資迎新報名表</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<style type = "text/css">
+			em{ font-weight: 300;
+				color: #FF3333;}
+			h1{ font-family: tahoma, helvetica, sans-serif; }
+			p{ font-size: 12pt;
+				font-family: arial, sans-serif;}
+			.special{ color: #0000CC; 
+				font-weight: 900;}
+			im{color: #9932cc;
+				font-weight: 800;}
+		@media all
+		{
+			body{background-color:#FFC8B4;}
+		}
+		@media screen and (max-device-width: 750px)
+		{
+			body{background-color:#CCDDFF;}
+		}
+		</style>
+		
+	</head>
+	<body>
+		<h1 class = "special">四資迎新報名表</h1><br>
+		<form method = "post" action = "index.php">
+			<p><label>名字:
+				<input name = "name" type = "text" size = "10" required 
+				placeholder = "王小明" ><em>(必填)</em>
+			</label></p>
+			
+			<p><label>手機號碼:
+				<input name = "phone" type = "text" required 
+				placeholder = "0987654321" pattern = "09\d{8}"><em>(必填)</em>
+			</label></p>
+			
+			<p><label>電子郵件<im>(限定Gmail)</im>:
+				<input name = "email" type = "text" size = "25" required
+				placeholder = "name@domain.com" pattern = "\S+@gmail.com"><em>(必填)</em>
+			</label></p>
+			
+			<p><label>生日:
+				<input name = "birthday" type = "date" required ><em>(必填)</em>
+			</label></p>
+			
+			<p>
+				你是什麼系:<br>
+			
+				<label style = "font-weight: 900">
+					<input name = "major" type = "radio" value = "資訊工程">資訊工程
+				</label>
+				
+				<label>
+					<input name = "major" type = "radio" value = "資訊英專">資訊英專
+				</label>
+				
+				<label>
+					<input name = "major" type = "radio" value = "資訊管理">資訊管理
+				</label>
+				
+				<label>
+					<input name = "major" type = "radio" value = "資訊傳播">資訊傳播
+				</label>
+			</p>
+ 
+			<p>
+				至今罹患過哪些重大疾病:<br>
+				<label>
+					<input name = "nodisease" type = "checkbox" value = "無罹患重大疾病">無罹患重大疾病
+				</label>
+				
+				<label>
+					<input name = "heartdisease" type = "checkbox" value = "心臟病">心臟病
+				</label>
+				
+				<label>
+					<input name = "asthma" type = "checkbox" value = "氣喘">氣喘
+				</label>
+				
+				<label>
+					<input name = "hypertension" type = "checkbox" value = "高血壓">高血壓
+				</label>
+				
+				<label>
+					<input name = "other" type = "checkbox" value = "其他">其他
+					</label>
+					<label>
+					<input name = "otherdisease" type = "text" size = "12"
+						placeholder = "蠶豆症">
+				</label>
+			</p>
+			
+			<p>
+				<label class = "modal-header">對本活動的期待
+					<select name = "rating">
+						<option selected value = "超級期待">超級期待</option>
+						<option value = "有點期待">有點期待</option>
+						<option value = "普通而已">普通而已</option>
+						<option value = "興致缺缺">興致缺缺</option>
+						<option value = "完全不期待">完全不期待</option>
+					</select>
+				</label>
+			</p>
+			
+			<p>
+				<input type = "submit" value = "Submit">
+				<input type = "reset" value = "Clear">
+			</p>
+		</form>
+	</body>
+</html>
