@@ -1,41 +1,41 @@
 # web design
-__本課程內容為web網頁設計__  
-_HW1網站架設_  
+_本課程內容為web網頁設計_  
+## HW1網站架設  
 - 主旨 : 利用wordpress架設個人blog  
 - 任務 :  
-    - install server  
+    1. install server  
         1. apache & error page  
         2. php  
         3. MySQL  
-    - install wordpress  
+    2. install wordpress  
         1. install wordpress  
         2. chang wordpress template  
         3. add gallery(plugin)  
-    - post 2 articles on th blog  
+    3. post 2 articles on th blog  
         1. self-introduction  
         2. any suggestion about this class  
 - Bonus :  
     1. register hostname(DNS)  
     2. https protocol  
   
-_HW2四系迎新報名網頁_  
+## HW2四系迎新報名網頁  
 - 主旨 : 利用bootstrap設計報名網頁  
 - 任務 :  
-    - HTML Form_使用者報名資訊  
+    1. HTML Form_使用者報名資訊  
         1. 必須含ratio或check box  
         2. 至少五項基本資料  
         3. 至少三項防呆機制(可利用HTML5內建或利用pattern)  
-    - CSS  
+    2. CSS  
         1. inline styles  
         2. embedded style sheets  
         3. linking external style sheets  
-    - 手機和電腦呈現不同風格之頁面  
-    - 產生報名表  
+    3. 手機和電腦呈現不同風格之頁面  
+    4. 產生報名表  
         1. 參考s學號_HW2.php  
         2. 印出使用者輸入之資訊  
         3. table(需合併儲存格)  
         4. CSS  
-    - 寄發確認信  
+    5. 寄發確認信  
         1. 發送成功  
         2. 需有使用者輸入資訊  
         3. 產生QRcodee  
@@ -45,7 +45,7 @@ _HW2四系迎新報名網頁_
     2. CSS validator
     3. 報名資料存入database
     4. 掃描QRcode可直接抵達報名表頁面
-_HW3階層式分群_  
+## HW3階層式分群  
         - 主旨 : 利用Javascript寫一程式，自動找出與某個州小於某個距離的所有州  
     - database : 美國50州犯罪率的階層分群樹(參考hw3.js)  
     - 距離定義 : 往上、下距離設為1  
@@ -59,7 +59,7 @@ _HW3階層式分群_
 - 目標州  
     - output :   
 - 所有符合的州名(按照文字排序且用,分隔)  
-_HW4縮網址系統_
+## HW4縮網址系統
 - 做法 : 
     - 利用apache .htaccess的rewrite設定執行php
     - 使用者輸入網址後透過php和資料庫連線
