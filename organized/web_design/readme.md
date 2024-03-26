@@ -46,41 +46,41 @@ _本課程內容為web網頁設計_
     3. 報名資料存入database
     4. 掃描QRcode可直接抵達報名表頁面
 ## HW3階層式分群  
-        - 主旨 : 利用Javascript寫一程式，自動找出與某個州小於某個距離的所有州  
-    - database : 美國50州犯罪率的階層分群樹(參考hw3.js)  
-    - 距離定義 : 往上、下距離設為1  
-    - 其他條件 : height要小於50  
-    - 變數說明 :   
-- state : 每州的名稱，共50筆資料  
-- height : 每次合併時的距離，共49筆資料(50州只需合併49次)  
-- merge : 每次合併之資訊，共49筆資料，用以紀錄是哪兩個值進行合併  
-    - input : (參考hw3.html)  
-- 距離  
-- 目標州  
-    - output :   
-- 所有符合的州名(按照文字排序且用,分隔)  
+- 主旨 : 利用Javascript寫一程式，自動找出與某個州小於某個距離的所有州  
+    1. database : 美國50州犯罪率的階層分群樹(參考hw3.js)  
+    2. 距離定義 : 往上、下距離設為1  
+    3. 其他條件 : height要小於50  
+    4. 變數說明 :   
+        1. state : 每州的名稱，共50筆資料  
+        2. height : 每次合併時的距離，共49筆資料(50州只需合併49次)  
+        3. merge : 每次合併之資訊，共49筆資料，用以紀錄是哪兩個值進行合併  
+    5. input : (參考hw3.html)  
+        1. 距離  
+        2. 目標州  
+    6. output :   
+        1. 所有符合的州名(按照文字排序且用,分隔)  
 ## HW4縮網址系統
 - 做法 : 
-    - 利用apache .htaccess的rewrite設定執行php
-    - 使用者輸入網址後透過php和資料庫連線
-    - 擷取資料庫內容之原始連結
-    - 透過php redirect轉到該頁面
-        - 任務 : 
-    - 使用者頁面 
-- 使用者輸入網址
-- 透過ajax給短網址
-- php連線資料庫
-- 短網址不重複產生(相同頁面為同樣短網址且短網址設定不可重複)
-    - 縮網址系統架構
-- apache .htaccess設定
-- 資料庫設計
-- php接收使用者網址
-- php連線資料庫
-- 資料庫搜尋原始網址
-- php自動轉網址
-        - Bonus : 
-    - 加入google adsense
-        - Hint(keyword) : 
-    - php redirect
-    - xampp .htaccess
-    - htaccess rewrite
+    1. 利用apache .htaccess的rewrite設定執行php
+    2. 使用者輸入網址後透過php和資料庫連線
+    3. 擷取資料庫內容之原始連結
+    4. 透過php redirect轉到該頁面
+- 任務 : 
+    1. 使用者頁面 
+        1. 使用者輸入網址
+        2. 透過ajax給短網址
+        3. php連線資料庫
+        4. 短網址不重複產生(相同頁面為同樣短網址且短網址設定不可重複)
+    2. 縮網址系統架構
+        1. apache .htaccess設定
+        2. 資料庫設計
+        3. php接收使用者網址
+        4. php連線資料庫
+        5. 資料庫搜尋原始網址
+        6. php自動轉網址
+- Bonus : 
+    1. 加入google adsense
+- Hint(keyword) : 
+    1. php redirect
+    2. xampp .htaccess
+    3. htaccess rewrite
