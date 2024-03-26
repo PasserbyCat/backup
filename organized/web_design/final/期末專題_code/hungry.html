@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	<head>
+		<style>
+			body, html 
+			{
+				height: 100%;
+				font-family: "Inconsolata", sans-serif;
+			}
+		
+			h5
+			{
+				font-size: 32px;
+			}
+		
+			.bigimg
+			{
+				text-align : center;
+			}
+			
+			.bigimg img
+			{
+				vertical-align : middle;
+			}
+			
+			.bigimg button
+			{
+				vertical-align : middle;
+			}
+		</style>
+		
+		<script>
+			var die1Image, die2Image;
+			var foodname = ["《古早味台式豬腳麵線》", "《冰糖花生豬腳》", "《脆皮德國豬腳》", "《蔥燒五花肉》", "《板栗紅燒肉》", "《椒香五花肉》", "《香煎味噌豬里肌》", "《香烤豬里肌》", "《豬里肌肉片豆腐捲》", "《蒜辣松阪豬》", "《塔香松阪豬》", "《椒鹽松阪豬》", "《香烤豬後腿肉佐生洋蔥》", "《空心菜沙茶後腿肉》", "《滷胛心肉》", "《洋蔥燒豬肉》", "《泡菜炒豬肉》", "《三杯杏鮑菇梅花豬》", "《香料烤梅花肉火腿溫沙拉》", "《蒜泥梅花肉》", "《蜂蜜檸檬豬腱肉》", "《香滷豬腱肉》", "《照燒腱子肉》"];
+			var name;
+			var dieValue = Math.floor( 1 + Math.random() * 23 );
+
+			function rollDice()
+			{
+				die1Image = document.getElementById( "die1" );
+				setImage( die1Image );
+				
+				window.addEventListener( "click", sethref, false );
+			} // end function rollDice 
+			function setImage( dieImg )
+			{
+				name = foodname[dieValue - 1];
+				document.getElementById( "name" ).innerHTML = name;
+				if (dieValue < 10) {
+					dieImg.setAttribute( "src", "food/food0" + dieValue + ".png" );
+				}
+				else {
+					dieImg.setAttribute( "src", "food/food" + dieValue + ".png" );
+				}
+			} // end function setImage
+			function sethref()
+			{
+				die2Image = document.getElementById( "die2" );
+				if (dieValue < 10) {
+					die2Image.setAttribute( "href", "recipe_0" + dieValue + ".html" );
+				}
+				else {
+					die2Image.setAttribute( "href", "recipe_" + dieValue + ".html" );
+				}
+			} // end function setImage
+			window.addEventListener( "load", rollDice, false );
+		</script>
+	</head>
+	<body>
+
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>		
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide" id = "name"></span></p>
+			</div>
+			<div class = "bigimg">
+				<img id = "die1">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<br><br>
+					<div class = "bigimg">
+						<a href = "recipe_01.html" id = "die2">
+							<input type = "button" value = "關於食譜" size = "100">
+						</a>
+					</div>
+					
+					<br>
+					
+					<div class = "bigimg">
+						<a href = "">
+							<input type = "button" value = "這個我不喜歡，請給我別的!" size = "300">
+						</a>
+					</div>
+					<br><br>
+				</div>
+			</div>
+
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《豬里肌肉片豆腐捲》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food09.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>豬里肌肉 600克			</li>
+						<li>小黃瓜 1條			</li>
+						<li>紅蘿蔔 1條</li>
+						<li>油豆腐 600克			</li>
+						<li>蒜頭 4顆			</li>
+						<li>薑片 3片			</li>
+						<li>豚骨高湯 1000克			</li>
+						<li>玉米粉 1大匙			</li>
+						<li>橄欖油 適量			</li>
+						<li>醬油 4大匙			</li>
+						<li>糖 1大匙			</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake">
+						<li>油豆腐切成長條狀，小黃瓜、紅蘿蔔切成長條薄片備用。</li>
+						<li>用豬里肌肉片將作法1捲好，並在肉捲接合處糊上玉米粉。</li>
+						<li>準備平底鍋，加入少許橄欖油燒熱後，將作法2煎至雙面均勻上色，起鍋備用。</li>
+						<li>在鍋中放入蒜和薑並爆香，加入豚骨高湯及醬油、糖，醬汁燒開後，將作法3下鍋紅燒，煮至入味即可上桌。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《豬里肌肉片豆腐捲》">
+								<input name = "foodneed" type = "hidden" value = "	豬里肌肉 600克
+	小黃瓜 1條
+	紅蘿蔔 1條
+	油豆腐 600克
+	蒜頭 4顆
+	薑片 3片
+	豚骨高湯 1000克
+	玉米粉 1大匙
+	橄欖油 適量
+	醬油 4大匙
+	糖 1大匙">
+								<input name = "foodmake" type = "hidden" value = "1.	油豆腐切成長條狀，小黃瓜、紅蘿蔔切成長條薄片備用。
+2.	用豬里肌肉片將作法1捲好，並在肉捲接合處糊上玉米粉。
+3.	準備平底鍋，加入少許橄欖油燒熱後，將作法2煎至雙面均勻上色，起鍋備用。
+4.	在鍋中放入蒜和薑並爆香，加入豚骨高湯及醬油、糖，醬汁燒開後，將作法3下鍋紅燒，煮至入味即可上桌。
+5.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+

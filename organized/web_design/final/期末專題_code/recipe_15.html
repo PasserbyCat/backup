@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《滷胛心肉》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food15.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>胛心肉一大盒			</li>
+						<li>蔥2支蒜			</li>
+						<li>薑6片</li>
+						<li>蒜瓣4粒			</li>
+						<li>辣椒1支			</li>
+						<li>泡水蔥絲酌量	</li>
+						<li>水700cc(要蓋過豬肉)			</li>
+						<li>冰糖2匙			</li>
+						<li>鹽約1t			</li>
+						<li>紹興酒100cc			</li>
+						<li>醬油100cc			</li>
+						<li>粗粒黑胡椒酌量			</li>
+						<li>滷汁一包(含八角，月桂葉，肉桂粉，粗粒黑胡椒，花椒)			</li>
+						<li>月桂葉一片(撕小片)			</li>
+						<li>肉桂粉，粗粒黑胡椒各酌量			</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake">
+						<li>蔥切長段，薑切片備用。胛心肉加冷水淹蓋過，煮約3~5分鐘 取出備用。</li>
+						<li>熱鍋下2匙油依序炒香薑片，蒜仁，蔥段後下冰糖小火炒至溶化。(炒糖要花點時間小火炒化但不能炒焦)。</li>
+						<li>加入醬油，紹興酒，水，鹽，月桂葉，粗粒黑胡椒煮滾。將滷汁盛入另鍋中，放入豬胛心肉，滷包，辣椒再撒些肉桂粉後移入電鍋內。</li>
+						<li>電鍋外鍋注入2米杯水，按鍵煮至開關跳起續燜30分後再加1/2米杯水再煮至開關跳起，略降溫取後取出滷包續燜至冷卻移入冰箱冷藏浸泡至入味。(豬肉熟成較快，因此第二次外鍋只加半杯水。)</li>
+						<li>取出泡入味胛心肉橫切厚片擺盤，以泡水蔥絲和薄荷葉飾盤即成滷胛心肉。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《滷胛心肉》">
+								<input name = "foodneed" type = "hidden" value = "	胛心肉一大盒
+	蔥2支蒜
+	薑6片
+	蒜瓣4粒
+	辣椒1支
+	泡水蔥絲酌量
+	滷汁:
+	水700cc(要蓋過豬肉)
+	冰糖2匙      
+	鹽約1t
+	紹興酒100cc   
+	醬油100cc   
+	粗粒黑胡椒酌量
+	滷汁一包(含八角，月桂葉，肉桂粉，粗粒黑胡椒，花椒)
+	月桂葉一片(撕小片)
+	肉桂粉，粗粒黑胡椒各酌量">
+								<input name = "foodmake" type = "hidden" value = "1.	蔥切長段，薑切片備用。胛心肉加冷水淹蓋過，煮約3~5分鐘 取出備用
+2.	熱鍋下2匙油依序炒香薑片，蒜仁，蔥段後下冰糖小火炒至溶化。(炒糖要
+花點時間小火炒化但不能炒焦)。
+3.	加入醬油，紹興酒，水，鹽，月桂葉，粗粒黑胡椒煮滾。將滷汁盛入另鍋中，放入豬胛心肉，滷包，辣椒再撒些肉桂粉後移入電鍋內。
+4.	電鍋外鍋注入2米杯水，按鍵煮至開關跳起續燜30分後再加1/2米杯水再煮至開關跳起，略降溫取後取出滷包續燜至冷卻移入冰箱冷藏浸泡至入味。(豬肉熟成較快，因此第二次外鍋只加半杯水。)
+5.	取出泡入味胛心肉橫切厚片擺盤，以泡水蔥絲和薄荷葉飾盤即成滷胛心肉
+6.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+

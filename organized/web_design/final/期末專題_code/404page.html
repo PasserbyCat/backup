@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>404</title>
+	  
+	  
+      <script>
+ 
+       var interval = null;
+var count = 10;
+ 
+function run()
+{
+   count += 0.1
+   if ( count >= 50 )
+   {
+      window.clearInterval( interval );
+      interval = null;
+	  window.location = "redirect.html";
+   }
+    document.writeln( "<nobr style = 'font-size: " + count + "px'>該</nobr><nobr style = 'font-size: " + count + "px'>網</nobr><nobr style = 'font-size: " + count + "px'>頁</nobr><nobr style = 'font-size: " + count + "px'>正</nobr><nobr style = 'font-size: " + count + "px'>在</nobr><nobr style = 'font-size: " + count + "px'>嘗</nobr><nobr style = 'font-size: " + count + "px'>試</nobr><nobr style = 'font-size: " + count + "px'>修</nobr><nobr style = 'font-size: " + count + "px'>復.........</nobr>" );
+}
+function display( error )
+{
+   if ( interval )
+      return;
+   count = 0;
+   error = window.setInterval( "run()", 15 );
+}
+
+
+ function start()
+{
+	var error = document.getElementById( "error" );
+	display( error );
+}
+ 
+window.addEventListener( "load", start, false );
+
+      </script>
+   </head>
+   <body>
+      <div>
+         <P id = "error"></P>
+      </div>
+   </body>
+</html>
+ 

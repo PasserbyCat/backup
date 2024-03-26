@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《冰糖花生豬腳》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food02.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>豬腳 1200 公克			</li>
+						<li>花生 200 公克			</li>
+						<li>薑片 5 片				</li>
+						<li>蒜仁 5 瓣				</li>
+						<li>八角 1 粒				</li>
+						<li>米酒 1 大匙				</li>
+						<li>醬油 90 cc				</li>
+						<li>水 300 cc				</li>
+						<li>冰糖 2大匙				</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol>
+						<li>花生洗淨後先用滾水泡約30分鐘，然後瀝乾備用。</li>
+						<li>準備一鍋滾水，加入米酒，將豬腳汆燙去血水。</li>
+						<li>將豬腳、花生及其它所有材料放入電鍋，稍微翻拌一下讓食材都沾裹到醬汁。</li>
+						<li>入電鍋外鍋2杯水跳起2次，再悶30分鐘。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+						<form method = "post" action = "recipe.php">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《冰糖花生豬腳》">
+								<input name = "foodneed" type = "hidden" value = "	豬腳 1200 公克
+	花生 200 公克
+	薑片 5 片
+	蒜仁 5 瓣
+	八角 1 粒
+	米酒 1 大匙
+	醬油 90 cc
+	水 300 cc
+	冰糖……2大匙">
+								<input name = "foodmake" type = "hidden" value = "1.	花生洗淨後先用滾水泡約30分鐘，然後瀝乾備用。
+2.	準備一鍋滾水，加入米酒，將豬腳汆燙去血水。
+3.	將豬腳、花生及其它所有材料放入電鍋，稍微翻拌一下讓食材都沾裹到醬汁。
+4.	入電鍋外鍋2杯水跳起2次，再悶30分鐘。
+5.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+
+	</body>
+</html>

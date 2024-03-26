@@ -1,0 +1,104 @@
+		.absolute
+		{
+			position:absolute;
+			z-index: 1;
+			background-position: center;
+		}
+		.abfive
+		{
+			position:absolute;
+			z-index: 1;
+			left:625px;
+			top:535px;
+			
+		}
+		.abfoot1
+		{
+			position:absolute;
+			z-index: 1;
+			left:460px;
+			top:590px;
+		
+		}
+		.abfoot2
+		{
+			position:absolute;
+			z-index: 1;
+			left:1045px;
+			top:600px;
+		}
+		.abheart
+		{
+			position:absolute;
+			z-index: 1;
+			left:495px;
+			top:460px;
+		}
+		.abjian
+		{
+			position:absolute;
+			z-index: 1;
+			left:1065px;
+			top:495px;
+		}
+		.ablee
+		{
+			position:absolute;
+			z-index: 1;
+			left:670px;
+			top:190px;
+		}
+		.ableg
+		{
+			position:absolute;
+			z-index: 1;
+			left:1090px;
+			top:260px;
+		}
+		.absong
+		{
+			position:absolute;
+			z-index: 1;
+			left:375px;
+			top:425px;
+		}
+		.abmay
+		{
+			position:absolute;
+			z-index: 1;
+			left:470px;
+			top:210px;
+		}
+		
+		.bgimg
+		{
+			position:relative;
+			z-index: -1;
+			background-position: center;
+		}
+		
+		.title
+		{
+			position:absolute;
+			margin-left:80px;
+			font-size:56px;
+			font-weight:900;
+		}
+		
+		.smallfood
+		{
+			weight: 320px;
+			height: 180px;
+		}
+		
+		.smallsmallfood
+		{
+			weight: 270px;
+			height: 135px;
+		}
+		
+		.title2
+		{
+			position:relative;
+		}
+		

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《香料烤梅花肉火腿溫沙拉》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food19.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>豬梅花肉塊 311 g			</li>
+						<li>碗豆苗 適量			</li>
+						<li>綜合堅果 50 g</li>
+						<li>牛蕃茄 1 顆			</li>
+						<li>鹽 9 g			</li>
+						<li>孜然粉 少許		</li>
+						<li>匈牙利紅椒粉 少許			</li>
+						<li>現磨黑胡椒粒 少許			</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake">
+						<li>取一湯鍋煮熱水，再把梅花肉放入，先把肉表面血水川燙後瀝乾。</li>
+						<li>把豬梅花肉兩面均抹上鹽、孜然粉、匈牙利紅椒粉和現磨黑胡椒粒後，用夾鍊袋裝好封口，放入冰箱冷藏4天讓肉入味。</li>
+						<li>從冰箱取出後切片放在舖好烘焙紙的烤盤內以上下火150度烘烤12~15分鐘。(烘烤時間視肉的厚薄度而定)</li>
+						<li>把綜合堅果打碎;碗豆苗用飲用水洗淨再用廚房紙巾吸取水份;牛蕃茄去蒂頭洗淨後切丁。</li>
+						<li>盤中先舖一層碗豆苗，再撒上少許堅果碎片周圍放上牛蕃茄丁。</li>
+						<li>擺上香料烤梅花肉火腿。</li>
+						<li>淋上烘烤梅花肉出來的湯汁再放上堅果碎片。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《香料烤梅花肉火腿溫沙拉》">
+								<input name = "foodneed" type = "hidden" value = "	豬梅花肉塊 311 g
+	碗豆苗 適量
+	綜合堅果 50 g
+	牛蕃茄 1 顆
+	鹽 9 g
+	孜然粉 少許
+	匈牙利紅椒粉 少許
+	現磨黑胡椒粒 少許">
+								<input name = "foodmake" type = "hidden" value = "1.	取一湯鍋煮熱水，再把梅花肉放入，先把肉表面血水川燙後瀝乾。
+2.	把豬梅花肉兩面均抹上鹽、孜然粉、匈牙利紅椒粉和現磨黑胡椒粒後，用夾鍊袋裝好封口，放入冰箱冷藏4天讓肉入味。
+3.	從冰箱取出後切片放在舖好烘焙紙的烤盤內以上下火150度烘烤12~15分鐘。<烘烤時間視肉的厚薄度而定>
+4.	把綜合堅果打碎;碗豆苗用飲用水洗淨再用廚房紙巾吸取水份;牛蕃茄去蒂頭洗淨後切丁。
+5.	盤中先舖一層碗豆苗，再撒上少許堅果碎片周圍放上牛蕃茄丁
+6.	擺上香料烤梅花肉火腿
+7.	淋上烘烤梅花肉出來的湯汁再放上堅果碎片。
+8.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+

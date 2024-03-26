@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《香烤豬里肌》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food08.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>薄片豬里肌 12 片			</li>
+						<li>醬油 1/2 杯			</li>
+						<li>蜂蜜 2 大匙</li>
+						<li>米酒 1 大匙			</li>
+						<li>水 1 大匙			</li>
+						<li>麻油/香油 1 匙			</li>
+						<li>麵粉 1 杯			</li>
+						<li>洋蔥粉(也可不加) 1 小匙			</li>
+						<li>白胡椒粉 少許			</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake">
+						<li>把豬排放在密封袋中, 和醃料混合均勻, 放在冰箱至少醃6小時。</li>
+						<li>預熱旋風烤箱至350度F 或177度c. 另拿一個袋子, 把裹粉材料放進去, 混合均勻, 將醃好的豬肉分批放入袋中(一次約3片), 把袋口捏緊, 並上下左右搖晃, 讓肉排的兩面均勻沾上粉。</li>
+						<li>取出肉排前把多餘的麵粉抖掉, 然後放在舖有錫箔紙的烤盤上(需在錫箔紙上塗一層薄油, 防沾黏。</li>
+						<li>放進烤箱前, 在肉排上淋一點油。</li>
+						<li>烤約10-12分鐘或直到筷子可以輕易刺穿豬排即可。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《香烤豬里肌》">
+								<input name = "foodneed" type = "hidden" value = "	薄片豬里肌 12 片
+	醬油 1/2 杯
+	蜂蜜 2 大匙
+	米酒 1 大匙
+	水 1 大匙
+	麻油/香油 1 匙
+	麵粉 1 杯
+	洋蔥粉(也可不加) 1 小匙
+	白胡椒粉 少許">
+								<input name = "foodmake" type = "hidden" value = "1.	把豬排放在密封袋中, 和醃料混合均勻, 放在冰箱至少醃6小時.
+2.	預熱旋風烤箱至350度F 或177度c. 另拿一個袋子, 把裹粉材料放進去, 混合均勻, 將醃好的豬肉分批放入袋中(一次約3片), 把袋口捏緊, 並上下左右搖晃, 讓肉排的兩面均勻沾上粉.
+3.	取出肉排前把多餘的麵粉抖掉, 然後放在舖有錫箔紙的烤盤上(需在錫箔紙上塗一層薄油, 防沾黏
+4.	放進烤箱前, 在肉排上淋一點油
+5.	烤約10-12分鐘或直到筷子可以輕易刺穿豬排即可
+6.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+

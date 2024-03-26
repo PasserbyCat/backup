@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《古早味台式豬腳麵線》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food01.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>豬腳 一副			</li>
+						<li>麵線 一捆			</li>
+						<li>麻油or苦茶油 一小匙</li>
+						<li>紅蔥頭 4 顆			</li>
+						<li>蒜頭 6 顆			</li>
+						<li>老薑 兩小塊			</li>
+						<li>青蔥 兩隻			</li>
+						<li>水 350 c.c			</li>
+						<li>醬油 3 大匙			</li>
+						<li>冰糖 1 小匙			</li>
+						<li>鹽 1 小匙			</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake">
+						<li>首先來處理豬腳。準備一鍋滾水跟一鍋冰水。把切塊的豬腳（可以去超市買現成的或請肉販幫忙切塊）用滾水汆燙過後放到冰水裡降溫, 這樣不只能夠去腥, 又能讓豬腳皮Q彈。</li>
+						<li>青蔥切段, 蒜頭 薑 蔥段 紅蔥頭全都拍碎備用。 在炒鍋裡, 放入兩大匙油, 等鍋熱後放入所有辛香料拌炒, 再把汆燙冰鎮過的豬腳放入一起拌炒至金黃色。</li>
+						<li>用醬油, 米酒, 鹽, 冰糖調味後, 放到電鍋內鍋裡, 倒入水蓋過豬腳。電鍋外鍋放兩杯水, 等到電鍋跳起後繼續悶大約10~15分鐘。（如果覺得豬腳不夠軟, 可以在外鍋多放一杯水繼續煮）</li>
+						<li>麵線的部分, 先把麵線洗過（把表面的鹽洗掉）, 用滾水把麵線煮軟, 撈起後用一點麻油或苦茶油拌一下, 讓麵線不要黏在一起。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《古早味台式豬腳麵線》">
+								<input name = "foodneed" type = "hidden" value = "	豬腳 一副
+	麵線 一捆
+	麻油or苦茶油 一小匙
+	紅蔥頭 4 顆
+	蒜頭 6 顆
+	老薑 兩小塊
+	青蔥 兩隻
+	水 350 c.c
+	醬油 3 大匙
+	冰糖 1 小匙
+	鹽 1 小匙">
+								<input name = "foodmake" type = "hidden" value = "1.	首先來處理豬腳。準備一鍋滾水跟一鍋冰水。
+把切塊的豬腳（可以去超市買現成的或請肉販幫忙切塊）用滾水汆燙過後放到冰水裡降溫, 這樣不只能夠去腥, 又能讓豬腳皮Q彈。
+2.	青蔥切段, 蒜頭 薑 蔥段 紅蔥頭全都拍碎備用。 在炒鍋裡, 放入兩大匙油, 等鍋熱後放入所有辛香料拌炒, 再把汆燙冰鎮過的豬腳放入一起拌炒至金黃色。
+3.	用醬油, 米酒, 鹽, 冰糖調味後, 放到電鍋內鍋裡, 倒入水蓋過豬腳。電鍋外鍋放兩杯水, 等到電鍋跳起後繼續悶大約10~15分鐘。（如果覺得豬腳不夠軟, 可以在外鍋多放一杯水繼續煮）
+4.	麵線的部分, 先把麵線洗過（把表面的鹽洗掉）, 用滾水把麵線煮軟, 撈起後用一點麻油或苦茶油拌一下, 讓麵線不要黏在一起。
+5.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+

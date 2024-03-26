@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>404</title>
+      <script>
+ 
+       var interval = null;
+var count = 0;
+ 
+function run()
+{
+   count += 1;
+   if ( count >= 500 )
+   {
+      window.clearInterval( interval );
+      interval = null;
+	  window.location = "about.html";
+   }
+}
+function display( error )
+{
+   if ( interval )
+      return;
+   count = 0;
+   error = window.setInterval( "run()", 10 );
+}
+
+
+ function start()
+{
+	var error = document.getElementById( "error" );
+	display( error );
+	
+}
+ 
+window.addEventListener( "load", start, false );
+
+      </script>
+   </head>
+   <body>
+      <div>
+         <P style = "font-size: 100px;">網頁正在重新導向.........</P>
+      </div>
+   </body>
+</html>
+ 

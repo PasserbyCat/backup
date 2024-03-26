@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<title>web 期末專題</title>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="css/position.css">
+	
+	<style>
+		body, html 
+		{
+			height: 100%;
+			font-family: "Inconsolata", sans-serif;
+		}
+		
+		h5
+		{
+			font-size: 32px;
+		}
+		
+		.bigimg
+		{
+			text-align : center;
+		}
+		
+		.bigimg img
+		{
+			vertical-align : middle;
+		}
+	</style>
+
+	<body>
+	<form method = "post" action = "recipe.php">
+	<!-- Links (sit on top) -->
+		<div class="w3-top" style = "z-index: 20">
+			<div class="w3-row w3-padding w3-black">
+				<div class="w3-col s3">
+					<a href="index.html" class="w3-button w3-block w3-black">主頁</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="recipe_local.html" class="w3-button w3-block w3-black">食譜大全</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="hungry.html" class="w3-button w3-block w3-black">幫我選食物</a>
+				</div>
+				
+				<div class="w3-col s3">
+					<a href="404page.html" class="w3-button w3-block w3-black">關於我們</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- Header with image -->
+		<header class="w3-display-container w3-sand" style = "margin-top:-5px;" id="home">
+			<div class = "title title2" style = "padding-top:100px;">
+				<p><span class="w3-tag w3-wide">《香煎味噌豬里肌》</span></p>
+			</div>
+			<div class = "bigimg">
+				<img src = "food/food07.png">
+			</div>
+		</header>
+
+	<!-- Add a background color and large text to the whole page -->
+		<div class="w3-sand w3-large">
+
+	<!-- About Container -->
+			<div class="w3-container" id="about">
+				<div class="w3-content" style="max-width:700px">
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《食材》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ul>
+						<li>豬里肌 300 g			</li>
+						<li>味噌 15 g			</li>
+						<li>薄鹽醬油 20 g</li>
+						<li>橄欖油 1 小匙		</li>
+						<li>黑美人菇 150 g			</li>
+						<li>鹽/蒜粉 各1/8小匙		</li>
+					</ul>
+					</div>
+					
+					<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">《步驟》</span></h5>
+					<div class="w3-panel w3-leftbar w3-light-grey">
+					<ol name = "foodmake" value = "首先來處理豬腳。準備一鍋滾水跟一鍋冰水。把切塊的豬腳（可以去超市買現成的或請肉販幫忙切塊）用滾水汆燙過後放到冰水裡降溫, 這樣不只能夠去腥, 又能讓豬腳皮Q彈。">
+						<li>將豬里肌切成薄片，用肉錘拍鬆。</li>
+						<li>醬油加味噌倒入盆中拌勻。</li>
+						<li>加入肉片抓碼一下，靜置醃15分鐘以上，再加入油拌勻。</li>
+						<li>不沾平底鍋免倒油，直接放入肉片，兩面各煎約3分鐘至肉熟後盛起。</li>
+						<li>原鍋倒入黑美人菇，加入鹽及蒜粉炒熟即可。</li>
+						<li>將肉片與炒熟的菇菇一起盛盤。</li>
+						<li>在瘦肉表面覆上油脂，加熱時肉的質感比較不會變硬，若不怕增加點醣量，可以再於肉面灑點玉米粉，會更軟嫩。</li>
+						<li>完成。</li>
+					</ol>
+					</div>
+					
+				</div>
+			</div>
+
+	<!-- Menu Container -->
+			<div class="w3-container" id="menu">
+				<div class="w3-content" style="max-width:700px">
+ 
+					<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">《寄送食譜》</span></h5>
+  
+					<div class="w3-panel w3-leftbar w3-light-grey">
+							<p>
+								<label>電子郵件:
+									<input name = "email" type = "text" size = "35" required placeholder = "name@domain.com">
+								</label>
+								<input name = "foodname" type = "hidden" value = "《香煎味噌豬里肌》">
+								<input name = "foodneed" type = "hidden" value = "	豬里肌 300 g
+	味噌 15 g
+	薄鹽醬油 20 g
+	橄欖油 1 小匙
+	黑美人菇 150 g
+	鹽/蒜粉 各1/8小匙">
+								<input name = "foodmake" type = "hidden" value = "1.	將豬里肌切成薄片，用肉錘拍鬆
+2.	醬油加味噌倒入盆中拌勻
+3.	加入肉片抓碼一下，靜置醃15分鐘以上，再加入油拌勻
+4.	不沾平底鍋免倒油，直接放入肉片，兩面各煎約3分鐘至肉熟後盛起
+5.	原鍋倒入黑美人菇，加入鹽及蒜粉炒熟即可
+6.	將肉片與炒熟的菇菇一起盛盤
+7.	據說在瘦肉表面覆上油脂，加熱時肉的質感比較不會變硬，若不怕增加點醣量，可以再於肉面灑點玉米粉，會更軟嫩
+8.	完成。">
+								<input type = "submit" size = "10" value = "寄送食譜">
+							</p>
+					</div>
+				</div>
+			</div>
+	<!-- End page content -->
+		</div>
+	<!-- Footer -->
+		<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+			<p>※來自WEB期末報告小組的肝與壽命與寒假&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp※連絡信箱: tweettweet@pig.com</p>
+		</footer>
+	</form>
+	</body>
+</html>
+
