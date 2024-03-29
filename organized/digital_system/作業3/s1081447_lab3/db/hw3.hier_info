@@ -1,0 +1,17 @@
+|hw3
+D[0] <= D[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= D[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= D[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= D[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[4] <= D[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D[5] <= D[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => D[0]~reg0.CLK
+clk => D[1]~reg0.CLK
+clk => D[2]~reg0.CLK
+clk => D[3]~reg0.CLK
+clk => D[4]~reg0.CLK
+clk => D[5]~reg0.CLK
+enable => D~1.OUTPUTSELECT
+seed => D~1.DATAB
+
+

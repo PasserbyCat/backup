@@ -1,0 +1,39 @@
+# Reading C:/altera/91sp2/modelsim_ase/tcl/vsim/pref.tcl 
+# do full_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\91sp2\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/digital/full {D:/digital/full/full.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module FA
+# -- Compiling module full
+# 
+# Top level modules:
+# 	full
+# 
+# vlog -vlog01compat -work work +incdir+D:/digital/full {D:/digital/full/full_test.v}
+# Model Technology ModelSim ALTERA vlog 6.5b Compiler 2009.10 Oct  1 2009
+# -- Compiling module full_test
+# 
+# Top level modules:
+# 	full_test
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc" full_test
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps full_test 
+# Loading work.full_test
+# Loading work.full
+# Loading work.FA
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run -all

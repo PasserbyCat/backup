@@ -1,0 +1,13 @@
+|hw1
+x <= or1.DB_MAX_OUTPUT_PORT_TYPE
+y <= or2.DB_MAX_OUTPUT_PORT_TYPE
+V <= or3.DB_MAX_OUTPUT_PORT_TYPE
+d0 => or3.IN1
+d1 => and1.IN0
+d1 => or3.IN2
+d2 => or1.IN0
+d2 => and1.IN1
+d3 => or1.IN1
+d3 => or2.IN1
+
+

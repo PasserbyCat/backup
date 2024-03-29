@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\digital\full\simulation\modelsim
+vFA
+IRjO3KSga=R;@46RKAGmYN1
+V3@hUko^2=K0ziX>UChc9U2
+Z1 w1618559635
+Z2 8D:/digital/full/full.v
+Z3 FD:/digital/full/full.v
+L0 1
+Z4 OV;L;6.5b;42
+r1
+31
+Z5 o-vlog01compat -work work -O0
+Z6 !s92 -vlog01compat -work work +incdir+D:/digital/full -O0
+n@f@a
+!s100 NFQf5Q:M4YUWnU1_@QMAO1
+!s85 0
+!s101 -O0
+vfull
+I:RH@Z0e_>bHH6jOaZJe6<0
+Vo;z]LVAb5hTYB41PI?E[03
+R1
+R2
+R3
+L0 8
+R4
+r1
+31
+R5
+R6
+!s100 D=[YQI;HdHjAXKLk0JB7]3
+!s85 0
+!s101 -O0
+vfull_test
+!s100 T3G9B0j?mAnKL<4dBQFLm2
+IX8?O`jK<=GcQbSU<L2LS<1
+VP3]fAOEYA2Cl[nHjW9oE?3
+w1618561752
+8D:/digital/full/full_test.v
+FD:/digital/full/full_test.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s101 -O0
+R5
+R6
