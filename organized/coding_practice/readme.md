@@ -21,4 +21,25 @@ _說明_
   
 ## header檔練習  
 1. I-1081447-week14 : 矩陣運算  
-2. I-1081447-week15
+2. I-1081447-week15  
+  
+## class_design  
+1. II-s1081447-week1 : rectangle  
+2. II-s1081447-week2 : person  
+3. II-s1081447-week3 : deckcard  
+4. II-s1081447-week4 : polynomial  
+5. II-s1081447-week5 : matrix  
+  
+## monster_system  
+1. II-s1081447-week6  
+2. II-s1081447-week9 : Polymorphism Practice  
+3. II-s1081447-week10 : Inheritance  
+4. II-termproj : Pokemon design
+  
+## template  
+1. II-s1081447-week7  
+2. II-s1081447-week8  
+  
+## Exception_Handling  
+1. II-s1081447-week11 : ChineseYear  
+2. II-s1081447-week12 : Stack  
