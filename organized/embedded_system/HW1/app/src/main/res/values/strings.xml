@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW1</string>
+    <string name="temperature">Deg. Celsius</string>
+    <string name="humidity">Humidity</string>
+    <string name="compute">comp</string>
+    <string name="reset">reset</string>
+    <string name="result"></string>
+</resources>
