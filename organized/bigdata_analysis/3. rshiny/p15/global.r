@@ -1,0 +1,1 @@
+x = read.csv("Taoyuan_LAND_A.csv", header = T, sep = ",")

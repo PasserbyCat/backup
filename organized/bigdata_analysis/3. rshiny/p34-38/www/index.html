@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <script src="shared/jquery.js" type="text/javascript"></script>
+    <script src="shared/shiny.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="shared/shiny.css">
+    <style type = "text/css">
+           body  { font-family: sans-serif;
+                   background-color: lightyellow; }
+           table { background-color: lightblue;
+                   border-collapse: collapse;
+                   border: 1px solid gray; }
+           td    { padding: 5px; }/*每個格子*/
+           tr:nth-child(odd) { background-color: white; }/*每一列*/
+    </style>
+  </head>
+  <body>
+    <h1>Weather</h1>
+    <form action="#">
+      <p>
+        <label>Location:</label><br />
+        <select name="local">
+          <option value="Taipei"> Taipei</option>
+          <option value="New Taipei">New Taipei</option>
+          <option value="Taoyuan"> Taoyuan</option>
+          <option value="Taichung"> Taichung</option>
+          <option value="Tainan"> Tainan</option>
+          <option value="Kaohsing"> Kaohsing</option>
+        </select>
+      </p>
+      <p>
+        <label>Type:</label><br />
+        <select name="type">
+          <option value="Max"> Max Temp.</option>
+          <option value="Min"> Min Temp.</option>
+        </select>
+      </p>
+      <div id="view" class="shiny-html-output"></div>
+      <div id="mpgPlot" class="shiny-plot-output" style="width: 50%; height: 400px"></div>
+    </form>
+  </body>
+</html>

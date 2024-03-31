@@ -1,0 +1,1 @@
+apply (iris[1:4],2,mean)#對該dataset(iris)的哪些([1:4])column(2)取mean

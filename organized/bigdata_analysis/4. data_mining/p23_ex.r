@@ -1,0 +1,16 @@
+library(amap)
+x = read.csv("p23_ex_pm25.csv", sep = ",", header = T)
+y = x[,5:28]
+rownames(y) = x[,2]
+hc = hcluster(y,method = "euclidean", link="single")
+png("p23_ex_out/pm25-single.png",width = 10,height = 5,res = 300,units="in")
+plot(hc)
+dev.off()
+hc = hcluster(y,method = "euclidean", link="average")
+png("p23_ex_out/pm25-average.png",width = 10,height = 5,res = 300,units="in")
+plot(hc)
+dev.off()
+hc = hcluster(y,method = "euclidean", link="complete")
+png("p23_ex_out/pm25-complete.png",width = 10,height = 5,res = 300,units="in")
+plot(hc)
+dev.off()

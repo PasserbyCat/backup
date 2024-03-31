@@ -1,0 +1,1 @@
+matplot(iris[,1:4],type="b")#根據不同的column畫圖

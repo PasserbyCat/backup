@@ -1,0 +1,5 @@
+#install.packages("rpart")
+library(rpart)
+fit = rpart(Species~.,data =iris)
+plot(fit)
+text(fit,use.n=TRUE,cex=1.5)#原本是沒有文字的(cex字體大小)

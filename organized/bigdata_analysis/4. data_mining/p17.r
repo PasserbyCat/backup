@@ -1,0 +1,5 @@
+library(amap)
+hc = hcluster(USArrests,method = "euclidean", link="complete")
+png("p17.png",width = 10,height = 5,res = 300,units="in")
+plot(hc)
+dev.off()

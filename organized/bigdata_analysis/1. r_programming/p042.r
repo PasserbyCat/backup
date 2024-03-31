@@ -1,0 +1,10 @@
+x=c(1,3,5,7,7,9)
+max(x)
+min(x)
+mean(x)#平均值
+median(x)#中位數
+sum(x)
+var(x)#變異數
+sd(x)#標準差
+quantile(x)#四分位數
+summary(x)
