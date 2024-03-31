@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HW4</string>
+    <string name = "pos_text">位置</string>
+    <string name = "next_button">下一步</string>
+    <string name = "consecutive_button">連續走完</string>
+    <string name = "restart">重新開始</string>
+</resources>

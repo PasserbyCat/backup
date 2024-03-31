@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/drawable/ic_launcher_background.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout-land/activity_my.xml" value="0.12125220458553791" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout-land/color_list_fragment.xml" value="0.12125220458553791" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout-land/information_fragment.xml" value="0.12125220458553791" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout-land/list_item_shade.xml" value="0.12125220458553791" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout-port/activity_my.xml" value="0.1331521739130435" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/activity_main.xml" value="0.1331521739130435" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/activity_my.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/color_list_fragment.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/information_fragment.xml" value="0.1331521739130435" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/information_fragment2.xml" value="0.1331521739130435" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/layout_land.xml" value="0.12864583333333332" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/layout_portrait.xml" value="0.12864583333333332" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/layout/list_item_shade.xml" value="0.1331521739130435" />
+        <entry key="..\:/AndroidStudioProject/hw8/app/src/main/res/menu/my.xml" value="0.14322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

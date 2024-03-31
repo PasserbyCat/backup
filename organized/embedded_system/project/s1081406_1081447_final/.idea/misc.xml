@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/drawable/ic_launcher_background.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/drawable/np.xml" value="0.159375" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/index_layout.xml" value="0.14322916666666666" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/more_information.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/npproblem_application.xml" value="0.12864583333333332" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/npproblem_introduction.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/product_introduction.xml" value="0.14322916666666666" />
+        <entry key="..\:/AndroidStudioProject/s1081406_1081447_final/app/src/main/res/layout/settings_layout.xml" value="0.14322916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">s1081406_1081447_final</string>
+    <string name="Index">NP?=P</string>>
+    <string name="Product_Introduction">產品介紹</string>
+    <string name="NP_Introduction">NP問題介紹</string>
+    <string name="NP_Problems">NP經典問題</string>
+    <string name="More_Information">了解更多</string>
+    <string name="Settings">設定</string>
+    <string name="App_Name">NPTeacher</string>
+    <string name="Index_Content">NP=P
+被證明出來了嗎？\n\n
+還沒</string>>
+    <string name="NP_Introduction_Content">NP(non-deterministic polynomial)代表，一個問題所需的時間複雜度為O(n^k)，也就是我們無法在多項式時間內解出該問題。\n
+NP-complete也是一個NP問題，不過他比較特別，其餘所有的NP問題都可以在多項式時間內化簡為NP-complete，這也代表，這也代表當NP=P時，NP-complete/NP/P重疊。\n
+
+NP-hard則比較特殊，他不見得是NP問題，並且不能確定是否能在多項式時間內找到解答，也就是說，就算NP=P，NP-hard也不見得能在多項式時間內得到解答。</string>
+    <string name="NP_Problems_Content">1. 背包問題
+我們有n種物品，物品j的重量為wj，價格為pj。
+我們假定所有物品的重量和價格都是非負的。背包所能承受的最大重量為W。
+如果限定每種物品只能選擇0個或1個，則問題稱為0-1背包問題。\n
+2. 哈密頓路徑問題
+一個銷售員要送貨給不同城市的人，然而每個城市間的距離皆不相同，如何找到最短路徑，成功將所有貨物送達所有城市呢？
+並且這可以延伸為銷售員問題</string>
+    <string name="More_Information_Content">1. 偽多項式時間
+有些NP-complete問題，其時間複雜度可以表示成輸入數值K的多項式，這叫做偽多項式時間，此時的NP-complete問題被稱為弱NP-complete問題。\n\n
+2. 踩地雷
+過去的小遊戲，也是經典的NP問題，想知道更多請前往Richard Kaye的個人網站。或點選下方url\n
+http://web.mat.bham.ac.uk/R.W.Kaye/minesw/</string>
+    <!-- Preference Titles -->
+    <string name="Product_Introduction_Content">本APP係經由元智大學資工系學生所製作，參考維基資料並加以整理，期待使用者能在本APP中更加了解NP問題。</string>
+    <string name="messages_header">Messages
+    </string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

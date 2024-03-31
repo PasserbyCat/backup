@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HW4</string>
+    <string name="pos_text">位置：</string>
+    <string name="next_button">下一步</string>
+    <string name="consecutive_button">連續走完</string>
+    <string name="restart">重新開始</string>
+    <string name="game_name">打擊騎士</string>
+    <string name="level">Level : </string>
+    <string name="new_game">New Game</string>
+    <string name="continue_continue">Continue</string>
+    <string name="quit">Quit</string>
+    <string name="score">Score:</string>
+    <string name="hit">Hit:</string>
+    <string name="miss">Miss:</string>
+    <string name="stop">暫停</string>
+</resources>
